@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lotto Simulator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+              <li><a href="#" id="admin-mode">Admin Mode</a></li>
+                <li><a href="#" id="user-mode">User Mode</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="user-section">
+            <h1>Choose Your Numbers</h1>
+            <div class="number-grid">
+                
+            </div>
+            <button id="generate-boards">Generate Boards</button>
+            <div id="board-section">
+              
+            </div>
+            <button id="enter-lotto">Enter Lotto</button>
+        </section>
+        <section id="admin-section" style="display: none;">
+            <h1>Simulate Lotto Draw</h1>
+            <button id="simulate-draw">Simulate Draw</button>
+            <div id="draw-results">
+                
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
