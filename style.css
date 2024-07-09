@@ -1,78 +1,63 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: sans-serif;
     margin: 0;
     padding: 0;
-}
-
-header {
-    background-color: #333;
-    color: #fff;
-    padding: 1em;
-    text-align: center;
-}
-
-nav ul {
+  }
+  
+  header {
+    background-color: #FFFF00;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
-    display: flex;
-    justify-content: space-between;
-}
-
-nav li {
-    margin-right: 20px;
-}
-
-nav a {
-    color: #fff;
+  }
+  
+  nav li {
+    display: inline-block;
+    margin-right: 1rem;
+  }
+  
+  nav a {
     text-decoration: none;
-}
-
-main {
+    color: black;
+  }
+  
+  main {
+    padding: 1rem;
+  }
+  
+  section {
+    margin-bottom: 2rem;
+  }
+  
+  .user-options, .admin-options {
+    border: 1px solid #000000;
+    padding: 1rem;
+  }
+  
+  .number-picker {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 2em;
-}
-
-.number-grid {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-gap: 10px;
-}
-
-.number-button {
-    background-color: #fff;
-    border: none;
-    padding: 10px;
-    font-size: 18px;
-    cursor: pointer;
-}
-
-.number-button:hover {
-    background-color: #ccc;
-}
-
-#board-section {
-    margin-top: 20px;
-}
-
-.board {
-    background-color: #fff;
-    border: 1px solid #ddd;
-    padding: 10px;
-    margin-bottom: 10px;
-}
-
-.board-price {
-    font-weight: bold;
-    margin-top: 10px;
-}
-
-#admin-section {
-    display: none;
-}
-
-#draw-results {
-    margin-top: 20px;
-}
+    flex-wrap: wrap;
+  }
+  
+  #num-boards, input[type="checkbox"] {
+    margin-right: 1rem;
+  }
+  
+  #tickets, #draw-results {
+    background-color: #f8f8f8;
+  padding: 1rem;
+  border-radius: 5px;
+  background-color: #e0e0e0;
+  padding: 1rem;
+  border-radius: 5px;
+  }
+  
+ 
+  
