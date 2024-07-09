@@ -27,7 +27,11 @@ body {
     text-decoration: none;
     color: black;
   }
-  
+  img {
+    width: 150px; 
+    height: 100px; 
+  }
+
   main {
     padding: 1rem;
   }
@@ -58,6 +62,47 @@ body {
   padding: 1rem;
   border-radius: 5px;
   }
+  /*Selct numbers*/
+  .number-picker {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
   
- 
+  .number-circle {
+    display: inline-block;
+    width: 40px; 
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer; 
+  }
+  
+  .number-circle.red {
+    background-color: #f00;
+  }
+  
+  .number-circle.yellow {
+    background-color: #ff0;
+  }
+  
+  .number-circle.green {
+    background-color: #0f0;
+  }
+  
+  .number-circle.blue {
+    background-color: #00f;
+    color: #fff; 
+  }
+  
+  .number-circle.selected {
+    
+    background-color: #0f0; 
+    border: 2px solid black; 
+  }
+  
+  .number-circle:hover {
+    opacity: 0.8; /* Slightly reduce opacity on hover for visual feedback */
+  }
   
