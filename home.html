@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lotto Simulator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <img src="https://th.bing.com/th/id/OIP.YR55dG8ddzB3XS05ogceNgAAAA?rs=1&pid=ImgDetMain" alt="Lotto Simulator Logo">
+    <h1>Lotto Simulator</h1>
+    <nav>
+      <a href="index.html">
+        <button id="switch-user">Switch to Admin</button>
+      </a>
+    </nav>
+  </header>
+
+  <main>
+     <section id="admin" class="hidden">
+      <h2>Admin</h2>
+      <div class="admin-options">
+        <h3>Draw Simulation</h3>
+        <button id="simulate-draw">Simulate Draw</button>
+        <p id="winning-numbers-display"></p>
+        <h3>Draw History</h3>
+        </div>
+      <div id="winning-tickets-admin">
+        <h2>Winning Tickets (Current Draw)</h2>
+        <p id="winning-tickets-count"></p>
+        <ul id="winning-tickets-list"></ul>
+      </div>
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
