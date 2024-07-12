@@ -12,7 +12,7 @@
     <img src="https://th.bing.com/th/id/OIP.YR55dG8ddzB3XS05ogceNgAAAA?rs=1&pid=ImgDetMain" alt="Lotto Simulator Logo">
     <h1>Lotto Simulator</h1>
     <nav>
-      <a href="home.html">
+      <a href="admin.html">
       <button id="switch-user">Switch to Admin</button>
     </a>
     </nav>
@@ -23,10 +23,9 @@
       <h2>User</h2>
       <div class="user-options">
         <h3>Select Numbers</h3>
-        <div class="number-picker">
-        </div>
+        <div id="boards-container"></div>
         <h3>Number of Boards</h3>
-        <input type="number" id="num-boards" min="1" max="10">
+        <input type="number" id="num-boards" min="1" max="10" value="1">
         <h3>Lotto Plus</h3>
         <div class="lotto-plus">
           <input type="checkbox" id="lotto-plus-1"> Lotto Plus 1
@@ -38,13 +37,14 @@
       <div id="tickets">
         <p id="total-cost">Total Cost: R0</p>
       </div>
-      <div id="winning-tickets">
-        <h2>Your Winning Tickets</h2>
-        <p id="user-winning-tickets">No winning tickets yet.</p>
-      </div>
+      
     </section>
 
-  
+    <div id="ticket-details"></div>
+    <div id="winning-tickets">
+      <h2>Your Winning Tickets</h2>
+      <p id="user-winning-tickets">No winning tickets yet.</p>
+    </div>
   </main>
 
   <script src="script.js"></script>
